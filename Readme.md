@@ -25,18 +25,5 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 
 > ##### Processo ilustrado da Classe TesteArrayReferencias:
 
-<img alt="TesteArrayReferencias" src="Array-cast/TestaArrayReferencias.jpg">
+<img alt="TesteArrayReferencias" src="./Array-Cast/TestaArrayReferencias.jpg">
 
-## Guardando qualquer referencia
-
-------------------
-ESCREVER 
-------------------
-Type cast ou cast é transformar...
-
-cast explicito e implicito
-
-classCastException
-
-## Arraylist e Generics
-ArrayList simplifica o Array
