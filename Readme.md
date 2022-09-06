@@ -43,3 +43,10 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 * set  
 * map
 
+## Equals e mais listas
+contains - O contains verificará se dentro daquela lista, tem o objeto passado como paramento no método
+<strong>
+> Equals: O método "contains" de uma lista usa o "equals" por de baixo dos panos, por isso onde se precisa fazer uma comparação customizada é importante fazer a alteração no "equals", já que o "contains" é dependende dele.
+</strong> 
+
+> O método equals, junto aos métodos toString e hashCode, é um dos métodos fundamentais da classe Object.
