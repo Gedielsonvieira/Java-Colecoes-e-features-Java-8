@@ -1,4 +1,7 @@
 # Java e java.util: Coleções, Wrappers e Lambda expressions
+
+> Uma lista significa, simplesmente, que estamos armazenando elementos em sequência
+
 ## Conhecendo Arrays
 ✅ Um array é um objeto<br>
 ✅ Um array é sempre inicializado com os valores padrões.<br>
@@ -38,10 +41,6 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 ✅ Evitar casts excessivos porque uma vez parametrizada a lista, não precisamos mais o cast.<br>
 ✅ Antecipar problemas de casts no momento de compilação.
 ️
-### ❗ Tipos de listas mais utilizadas no mercado: 
-* Arraylist 
-* set  
-* map
 
 ## Equals e mais listas
 contains - O contains verificará se dentro daquela lista, tem o objeto passado como paramento no método
@@ -50,3 +49,39 @@ contains - O contains verificará se dentro daquela lista, tem o objeto passado 
 </strong> 
 
 > O método equals, junto aos métodos toString e hashCode, é um dos métodos fundamentais da classe Object.
+
+
+### Listas
+
+> <strong> List é uma interface que define os métodos da lista, a ArrayList e a LinkedList são implementações</strong>
+
+* #### ArrayList
+  > ArrayList  utiliza um array internamente com redimensionamento dinâmico.
+
+    <strong>Pontos positivos:</strong><br>
+✅ Acesso fácil a qualquer elemento aleatório pelo índice<br>
+✅ Adicionar novos elementos em um array é um processo simples<br><br>
+
+    <strong>Pontos negativos:</strong><br>
+❌ A capacidade é limitada ao seu tamanho no momento da criação, ou seja, uma vez que sua capacidade acaba, é necessária a criação de um novo array, com capacidade maior, e copiar os elementos do antigo array para o novo.<br>
+❌ Se quisermos remover um elemento, o array não permitirá que existam "buracos" em sua lista e, sendo assim, moverá todas as referências de modo que todos os índices serão modificados
+
+    > Se for apagar elementos do arraylist o arraylist não é recomendado, por que a cada elemento que for apagado do inicio, ele tem que reorganizar tudo, agora se for somente inserir elementos e iterar ele é o tipo de lista recomendada.
+
+<br>
+
+* #### LinkedList
+  > Linkedlist utiliza a estrututa de dados de uma lista duplamente encadeada
+
+  <strong>Pontos positivos</strong><br>
+  ✅ Remover um elemento - pois ao remover é simplesmente informar qual será o próximo e o anterior aquele elemento.<br><br>
+
+  <strong>Ponto negativo</strong><br>
+  ❌ Não conseguimos buscar diretamente um elemento aleatório pois temos que iterar desde o começo da lista até encontrar o elemento.
+
+
+
+### ❗ Tipos de listas mais utilizadas no mercado:
+* Arraylist
+* set
+* map
