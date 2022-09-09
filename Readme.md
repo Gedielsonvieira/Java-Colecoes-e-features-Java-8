@@ -29,7 +29,7 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 
 <img alt="TesteArrayReferencias" src="./ArrayWithCast/src/TestaArrayReferencias.jpg">
 
-## Conhecendo ArrayList e Generics
+## ArrayList e Generics
 ✅ Ao adicionar o elemento sempre fica no fim da lista.<br>
 ✅ O limite do objeto do tipo java.util.ArrayList é a memória da JVM.<br>
 ✅ Guarda referências.<br>
@@ -40,6 +40,8 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 ✅ O código fica mais legível, já que fica explícito o tipo dos elementos.<br>
 ✅ Evitar casts excessivos porque uma vez parametrizada a lista, não precisamos mais o cast.<br>
 ✅ Antecipar problemas de casts no momento de compilação.
+
+> Utilizar Generics é uma boa prática para nossas coleções
 ️
 
 ## Equals e mais listas
@@ -53,7 +55,9 @@ contains - O contains verificará se dentro daquela lista, tem o objeto passado 
 
 ### Listas
 
-> <strong> List é uma interface que define os métodos da lista, a ArrayList e a LinkedList são implementações</strong>
+> <strong> List é uma interface que define os métodos da lista, a ArrayList, LinkedList e Vector são implementações</strong>
+
+<img alt="principais-listas-que-implementam-interface-list" src="./images/interface-list.jpg">
 
 * #### ArrayList
   > ArrayList  utiliza um array internamente com redimensionamento dinâmico.
@@ -79,9 +83,35 @@ contains - O contains verificará se dentro daquela lista, tem o objeto passado 
   <strong>Ponto negativo</strong><br>
   ❌ Não conseguimos buscar diretamente um elemento aleatório pois temos que iterar desde o começo da lista até encontrar o elemento.
 
+<br>
 
+* #### Vector
+  > O Vector tem uma diferença importante em relação ao ArrayList, ele é o que chamamos de thread safe.
 
-### ❗ Tipos de listas mais utilizadas no mercado:
+  > Qualquer programa em Java inicia com um método main, que forma uma "pilha" e, a partir dele, podemos ter uma nova "pilha". Dessa forma, elas podem ser executadas em paralelo. Quando temos esse tipo de situação, e desejamos que as execuções sejam feitas em paralelo, em cima de uma mesma lista, utilizamos o java.util.Vector.
+
+  > O Vector é utilizado como exceção. 
+  
+
+## ❗ Tipos de listas mais utilizadas no mercado:
 * Arraylist
 * set
 * map
+
+## As classes Wrappers 
+
+> Uma coleção (ArrayList, LinkedList, Vector) somente guarda referencias e não tipos primitivos, o que acontece internamente é que ao alocar um int em uma lista, ele é transformado automaticamente em uma referencia do tipo Integer pois representa o tipo primitivo int no mundo OO. -> Esta transformação, que ocorre sempre automaticamente, é chamada de Autoboxing.
+
+<img alt="Autoboxing e unboxing" src="./images/Autoboxing-unboxing.jpg">
+
+> As classes que existem para cada tipo primitivo se chamam wrappers.
+> São classes que contém funcionalidades e encapsulam a variável de tipo primitivo!
+
+* Autoboxing - Transformação de primitivo para objeto.
+* Unboxing - Transformação de objeto para primitivo.
+
+### Tipos primitivos e as classes as quais estão associadas:
+
+<img alt="" src="./images/associacao-tipo-primitivo-wrappers.jpg">   
+
+️
