@@ -114,4 +114,13 @@ contains - O contains verificará se dentro daquela lista, tem o objeto passado 
 
 <img alt="" src="./images/associacao-tipo-primitivo-wrappers.jpg">   
 
-️
+
+## Ordenação de listas
+* Para ordenar uma lista é preciso definir um critério de ordenação (sort)
+  * Há duas formas de definir esse critério
+    * Pela interface Comparator
+    * Pela interface Comparable (ordem natural)
+* O algoritmo de ordenação já foi implementado
+  * No método sort da lista
+  * No métdod sort da classe Collections
+* A classe Collections é uma fachada com vários métodos auxiliares para trabalhar com as coleções, principalmente listas

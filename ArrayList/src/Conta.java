@@ -1,10 +1,15 @@
 public class Conta {
     private int agencia;
     private int numero;
+    private double saldo;
+    private Cliente titular;
 
     public Conta(int Agencia, int Numero) {
         this.agencia = Agencia;
         this.numero = Numero;
+    }
+    public void deposita(double v) {
+        this.saldo = this.saldo = v;
     }
 
     public int getAgencia() {
@@ -13,6 +18,14 @@ public class Conta {
 
     public int getNumero() {
         return numero;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
     }
 
     @Override
