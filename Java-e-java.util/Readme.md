@@ -16,8 +16,8 @@
 
 #### Forma "classica" de criar um objeto array usando a palavra chave new, exemplo:
 
-int[] numeros = new int[2];
-numeros[0] = 1;
+int[] numeros = new int[2];<br>
+numeros[0] = 1;<br>
 numeros[1] = 2;
 
 #### Forma literal:
@@ -27,7 +27,7 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 > ##### Processo ilustrado da Classe g.TesteArrayReferencias:
 > Valor padrão de uma referencia é null
 
-<img alt="TesteArrayReferencias" src="./ArrayWithCast/src/TestaArrayReferencias.jpg">
+<img alt="TesteArrayReferencias" src="./images/TestaArrayReferencias.jpg">
 
 ## ArrayList e Generics
 ✅ Ao adicionar o elemento sempre fica no fim da lista.<br>
@@ -124,3 +124,8 @@ contains - O contains verificará se dentro daquela lista, tem o objeto passado 
   * No método sort da lista
   * No métdod sort da classe Collections
 * A classe Collections é uma fachada com vários métodos auxiliares para trabalhar com as coleções, principalmente listas
+
+
+## Classes anônimas e Lambdas
+Quando temos uma motivação muito fraca para utilizar uma classe podemos utilizar classes anônimas. Ex: Ao utilizar uma classe somente para encapsular um método (Function Object).<br>
+Porém para facilitar o entendimento e legibilidade do código podemos utilizar Lambdas.
