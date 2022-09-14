@@ -22,5 +22,17 @@
 > Informamos que método que queremos que ele use para comparar aqueles valores e ordenar de acordo com aquilo. Aqui de acordo com o tempo.<br> <strong>Podemos falar assim: Comparator, compara e ordena para mim de acordo com o tempo.</strong>
 
 
-### ❗ Importante: 
-✅ Programe sempre defensivamente!
+## Relacionamentos com coleções
+#### Boas práticas em relação a orientação a objetos de como trabalhar com relacionamento de classes usando coleções:
+✅ Uma boa prática em um objeto é que a única "pessoa" que muda os atribusta daquele objeto é o próprio objeto.<br>
+✅ Ser mais genérico para manter um baixo acoplamento e alta coesão (devemos nos comprometer menos com o objeto com tudo aquilo que ele faz e como ele faz)
+ 
+
+
+## ❗ Importante: 
+#### Programe sempre defensivamente:
+
+✅ Verificar se é null os atributos passados em nossos construtores.<br>
+✅ Quando devolver referencia para objetos devolver algo imutável.
+    
+
