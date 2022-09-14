@@ -26,13 +26,16 @@
 #### Boas práticas em relação a orientação a objetos de como trabalhar com relacionamento de classes usando coleções:
 ✅ Uma boa prática em um objeto é que a única "pessoa" que muda os atribusta daquele objeto é o próprio objeto.<br>
 ✅ Ser mais genérico para manter um baixo acoplamento e alta coesão (devemos nos comprometer menos com o objeto com tudo aquilo que ele faz e como ele faz)
- 
 
+### unmodifiable list
+O melhor jeito de ordenar uma unmodifiable list seguindo algum critério é nos aproveitarmos da possibilidade de poder *passar a unmodifiable list no construtor de uma ArrayList tradicional* , podendo assim utilizar o método .sort() de Collections.
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
 
 ✅ Verificar se é null os atributos passados em nossos construtores.<br>
 ✅ Quando devolver referencia para objetos devolver algo imutável.
-    
+
+#### O que é Ordem natural dos objetos?
+✅ É a ordem definida pelo comparable na classe.
 
