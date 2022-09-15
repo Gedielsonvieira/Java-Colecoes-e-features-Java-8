@@ -24,11 +24,25 @@
 
 ## Relacionamentos com coleções
 #### Boas práticas em relação a orientação a objetos de como trabalhar com relacionamento de classes usando coleções:
-✅ Uma boa prática em um objeto é que a única "pessoa" que muda os atribusta daquele objeto é o próprio objeto.<br>
+✅ Uma boa prática em um objeto é que a única "pessoa" que muda os atributos daquele objeto é o próprio objeto.<br>
 ✅ Ser mais genérico para manter um baixo acoplamento e alta coesão (devemos nos comprometer menos com o objeto com tudo aquilo que ele faz e como ele faz)
 
 ### unmodifiable list
 O melhor jeito de ordenar uma unmodifiable list seguindo algum critério é nos aproveitarmos da possibilidade de poder *passar a unmodifiable list no construtor de uma ArrayList tradicional* , podendo assim utilizar o método .sort() de Collections.
+
+## O poder dos sets
+Set é uma interface que define uma coleção.
+> Diferente de uma lista que é uma sequência um Set é uma sacola onde todos os objetos estão lá jogados.
+
+A estrutura de um Set é uma tabela de espalhamento
+
+Utiliza-se o for para acessar os elementos
+
+#### Benefícios:
+✅ Um Set garante que nenhum elemento se repete. Por isso o método add(..) devolve um booleano que indica o sucesso da inserção.<br>
+✅ Há métodos que fazem busca por um objeto, como contains(..) ou remove(..), que são muito mais rápidos se comparado com uma lista, (velocidade e performance).<br>
+✅ Não garante a ordem de inserção.
+
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
