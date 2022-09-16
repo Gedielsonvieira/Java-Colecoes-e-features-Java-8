@@ -12,6 +12,11 @@ public class TestaCursoComAluno {
         javaCollections.matricula(a2);
         javaCollections.matricula(a3);
 
+        Aluno luana = new Aluno("Luana", 5156);
+        System.out.println("O" + a1 + "é equals a luana: " + a1.equals(luana));
+
+        System.out.println(javaCollections.estaMatriculado(luana));
+
         System.out.println(javaCollections.getAlunos());
 
         /*

@@ -43,6 +43,43 @@ Utiliza-se o for para acessar os elementos
 ✅ Há métodos que fazem busca por um objeto, como contains(..) ou remove(..), que são muito mais rápidos se comparado com uma lista, (velocidade e performance).<br>
 ✅ Não garante a ordem de inserção.
 
+## Equals e hashCode
+> Equals por default só vai dar true se uma referência é igual a outra, devemos sobrescrever o método equals se queremos mudar o conceito de igualdade.
+
+Imagine o seguinte:<br>
+instaciamos um objeto do tipo Aluno e já o matricula-mos 
+
+`
+Curso javaCollections = new Curso("Java Collections", "Paulo");
+`<br>
+`
+Aluno a1 = new Aluno("Luana", 5156);
+`<br>
+`
+javaCollections.matricula(a1);
+`<br>
+
+E alguém quer saber se este aluno já foi matriculado:
+
+`
+System.out.println(javaCollections.estaMatriculado(luana));
+`<br>
+
+Aqui dará um erro bastante comum, o aluno está matriculado mas o retorno ainda é false, motivo:<br>
+<strong>
+Existe um problema bastante comum ao trabalhar com conjuntos o equals, image que para retornar se aquele aluno já foi matriculado ou não, 
+como por default o equals retorna somente true se e somente se a referencia for igual, devemos sobrescrever o método equals, porém ainda continua dando false e o que ocorre é que como os conjuntos trabalham com  a tabela de espalhamento, que é uma estrutura de dados, para a verificação ocorre que  a comparação de igualdade não ocorre um por um e sim ele usa numeros e aloca os objetos categorizando por numeros e com isso ele espalha e para procurar ele verifica o número, e vai na sacola que tem esse numero, dessa forma tem-se a certeza de que o objeto procurado estará na "sacola" com esse numero e não em outras "sacolas".</strong>
+
+Esse número mágico é gerado utilizando o método hashCode, por isso precisamos sobrescrevê-lo, mudando-o para quando criarmos um objeto Aluno com o mesmo nome, que esses objetos gerem o mesmo hashCode e portanto, fiquem no mesmo grupo.
+
+
+### ⚠️Regra: 
+#### Sempre que reescrevemos o método equals ao utilizar conjuntos devemos sobreescrever o método hashcode.
+
+### ⚠️Observação:
+#### Apesar de ser perigoso, se estamos verificando se um elemento pertence a uma implementação de List, só precisamos reescrever o método equals(), já que o método .contains() de List só utiliza o equals para comparação.
+
+
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
