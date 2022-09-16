@@ -29,6 +29,32 @@ Exemplo: int[] numeros = {1,2,3,4,5};
 
 <img alt="TesteArrayReferencias" src="./images/TestaArrayReferencias.jpg">
 
+## Cast explicito e implícito
+    Type Cast que é nada mais do que a conversão de um tipo para outro.
+### cast implícito:<br>
+`int numero = 3;`<br>
+`double valor = numero;`<br>
+### cast explícito:<br>
+`int numero = 3;`<br>
+`double valor = (double) numero;`
+
+
+### cast explicito é exigido pelo compilador
+Agora, o contrário não funciona sem cast, uma vez que um double não cabe em um int:<br>
+`double valor = 3.56;`<br>
+`int numero = (int) valor;` 
+
+### Cast implícito de referências
+`ContaCorrente cc1 = new ContaCorrente(22, 33);`<br>
+`Conta conta = cc1;`
+
+### Cast explicito de referências
+     cast desnecessário já que qualquer contaCorrente é uma conta:
+
+`ContaCorrente cc1 = new ContaCorrente(22, 33);`<br>
+`Conta conta = (Conta) cc1;` 
+
+
 ## ArrayList e Generics
 ✅ Ao adicionar o elemento sempre fica no fim da lista.<br>
 ✅ O limite do objeto do tipo java.util.ArrayList é a memória da JVM.<br>
