@@ -101,14 +101,15 @@ O <strong>LinkedHashMap</strong> continua nos dando a performance de um <strong>
 
 
 ## Qual Collection usar?
-> <strong>Será utilizado a Collection que mais agrega-rá ao negócio.</strong><br>
-> Exemplo:  precisamos usar uma coleção que deve guardar os alunos ordenados pelo número de matrícula e não pode ter elementos repetidos.
-> Sendo assim devemos utilizar <strong>Treeset</strong> - pois a implementação TreeSet já ordena os seus elementos na hora da inserção e como é um conjunto não terá elementos repetidos. 
-<br>
-> Neste caso não poderiamos usar:<br> 
-> <strong>LinkedHashSet</strong> pois não garante ordenação;<br>
-> <strong>ArrayList</strong> não é um conjunto, isto é, permite elementos repetidos.<br>
-> <strong>HashSet</strong> atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
+<strong>Será utilizado a Collection que mais agrega-rá ao negócio.</strong><br>
+
+    Exemplo:  Precisamos usar uma coleção que deve guardar os alunos ordenados pelo número de matrícula e não pode ter elementos repetidos.
+    Sendo assim devemos utilizar <strong>Treeset</strong> - pois a implementação TreeSet já ordena os seus elementos na hora da inserção e como é um conjunto não terá elementos repetidos.
+
+    Neste caso não poderiamos usar:
+    <strong>LinkedHashSet</strong> pois não garante ordenação;
+    <strong>ArrayList</strong> não é um conjunto, isto é, permite elementos repetidos.
+    <strong>HashSet</strong> atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
