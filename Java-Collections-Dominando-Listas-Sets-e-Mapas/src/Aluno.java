@@ -2,6 +2,7 @@ import java.util.Objects;
 
 public class Aluno {
     private String nome;
+
     private int numeroMatricula;
 
     public Aluno(String nome, int numeroMatricula) {
@@ -14,6 +15,10 @@ public class Aluno {
 
     public String getNome() {
         return nome;
+    }
+
+    public int getNumeroMatricula() {
+        return numeroMatricula;
     }
 
     @Override

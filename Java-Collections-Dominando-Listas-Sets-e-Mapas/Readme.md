@@ -1,5 +1,5 @@
 # Java Collections: Dominando Listas, Sets e Mapas
-
+> O grande foco desse treinamento foi o uso da API de Collections
 ## Trabalhando com ArrayList
 
 ### Lista de objetos
@@ -23,6 +23,8 @@
 
 
 ## Relacionamentos com coleções
+> Pimeiramente coleção é todo mundo que implementa a interface Collection.
+
 #### Boas práticas em relação a orientação a objetos de como trabalhar com relacionamento de classes usando coleções:
 ✅ Uma boa prática em um objeto é que a única "pessoa" que muda os atributos daquele objeto é o próprio objeto.<br>
 ✅ Ser mais genérico para manter um baixo acoplamento e alta coesão (devemos nos comprometer menos com o objeto com tudo aquilo que ele faz e como ele faz)
@@ -80,6 +82,33 @@ Esse número mágico é gerado utilizando o método hashCode, por isso precisamo
 #### Apesar de ser perigoso, se estamos verificando se um elemento pertence a uma implementação de List, só precisamos reescrever o método equals(), já que o método .contains() de List só utiliza o equals para comparação.
 
 
+## Outros sets
+* O LinkedHashSet nos dá a performance de um HashSet mas com acesso previsível e ordenado.<br><br>
+* TreeSet só funciona para classes que implementam a interface Comparable, porque internamente o TreeSet guarda os objetos na sua ordem natural, que é a ordem implementada por meio do Comparable.
+
+## Mapas
+`-` <strong>Map é uma interface</strong>
+> " É comum que dentro de classes agente trabalhe com várias coleções lá dentro e que cada uma serve para uma coisa interessaante. "
+
+
+
+### características do map
+✅ Através da chave conseguimos acessar o valor: Ela funciona da seguinte maneira, mapeia valores para chaves, e através da chave conseguimos acessar o valor correspondente. Por isso ela não pode ser repetida, ao contrário do valor, que podem existir iguais.<br><br>
+✅ chave repetida é sobrescrita pela nova: se uma chave for repetida, a antiga permanece, porém, o valor é sobrescrito pelo novo valor contido na chave passada, sendo o antigo valor "esquecido" pelo Map.<br><br>
+✅ O método utilizado para adicionar um elemento em um Map é o método put. Ele recebe dois parâmetros, a chave e o valor.<br>
+
+O <strong>LinkedHashMap</strong> continua nos dando a performance de um <strong>HashMap</strong>, mas com acesso previsível e ordenado, seguindo a inserção dos seus elementos.
+
+
+## Qual Collection usar?
+> <strong>Será utilizado a Collection que mais agrega-rá ao negócio.</strong><br>
+> Exemplo:  precisamos usar uma coleção que deve guardar os alunos ordenados pelo número de matrícula e não pode ter elementos repetidos.
+> Sendo assim devemos utilizar <strong>Treeset</strong> - pois a implementação TreeSet já ordena os seus elementos na hora da inserção e como é um conjunto não terá elementos repetidos. 
+<br>
+> Neste caso não poderiamos usar:<br> 
+> <strong>LinkedHashSet</strong> pois não garante ordenação;<br>
+> <strong>ArrayList</strong> não é um conjunto, isto é, permite elementos repetidos.<br>
+> <strong>HashSet</strong> atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
@@ -89,4 +118,15 @@ Esse número mágico é gerado utilizando o método hashCode, por isso precisamo
 
 #### O que é Ordem natural dos objetos?
 ✅ É a ordem definida pelo comparable na classe.
+
+#### Resumo dos mais utilizados:
+* Da interface List:<br>
+  ✅ ArrayList<br><br>
+
+* Da interface Set:<br>
+  ✅ HashSet<br><br>
+
+* Da interface Map:<br>
+  ✅ HashMap
+
 
