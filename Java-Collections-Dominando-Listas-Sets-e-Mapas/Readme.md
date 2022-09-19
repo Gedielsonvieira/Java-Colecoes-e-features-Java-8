@@ -107,9 +107,9 @@ O <strong>LinkedHashMap</strong> continua nos dando a performance de um <strong>
     Sendo assim devemos utilizar <strong>Treeset</strong> - pois a implementação TreeSet já ordena os seus elementos na hora da inserção e como é um conjunto não terá elementos repetidos.
 
     Neste caso não poderiamos usar:
-    <strong>LinkedHashSet</strong> pois não garante ordenação;
-    <strong>ArrayList</strong> não é um conjunto, isto é, permite elementos repetidos.
-    <strong>HashSet</strong> atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
+    LinkedHashSet - Pois não garante ordenação;
+    ArrayList - Como não é um conjunto, isto é, permite elementos repetidos;
+    HashSet  - Porque atende a primeira condição, de não ter elementos repetidos, mas não possui ordenação.
 
 ## ❗ Importante: 
 #### Programe sempre defensivamente:
