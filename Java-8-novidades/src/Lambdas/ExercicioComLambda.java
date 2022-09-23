@@ -6,11 +6,7 @@ Como podemos escrevê-lo usando uma expressão lambda?
 */
 
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.function.Consumer;
-
-public class ExercicioComThread {
+public class ExercicioComLambda {
     public static void main(String[] args) {
         //Classe anonima
         new Thread(new Runnable() {

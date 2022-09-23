@@ -20,7 +20,5 @@ public class ImprimeComLambda {
         });
 
         System.out.println("\n" + palavras);
-
-
     }
 }
