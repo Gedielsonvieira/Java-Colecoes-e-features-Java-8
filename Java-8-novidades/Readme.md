@@ -29,4 +29,12 @@ Arraylist.forEach(impressor);<br><br>
 <strong>Interface funcional é aquela interface que só tem um método abstrato. Além desse método ela pode ter outros métodos, contanto que sejam default ou 'static'.</strong>
 
 ### ❗ Importante:
-✅ Para trabalhar com lambda, uma interface funcional precisa estar envolvida.
+✅ Para trabalhar com lambda, uma interface funcional precisa estar envolvida.<br>
+* <strong>É possível sim, instanciar uma classe abstrata ou uma interface!</strong> Para isso devemos: <br>
+  * Implementar todos os métodos abstratos, ou seja, todos os métodos da interface; <br>
+  * E só devemos usar o "new" para implementação de uma interface em classes anônimas.
+
+
+## Method references
+> Esse recurso nos permite chamar um método usando referência de método.
+
