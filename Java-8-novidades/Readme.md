@@ -19,6 +19,8 @@ Outra forma de iterar sob uma coleção é com o forEach da interface iterable, 
 o novo método forEach recebe como parâmetro a interface Consumer.
 
 ## Lambdas
+> Uma função lambda é uma função sem declaração, isto é, não é necessário colocar um nome, um tipo de retorno e o modificador de acesso. A ideia é que o método seja declarado no mesmo lugar em que será usado.
+
 > Tendo a dificuldade de entendimento e verbosidade da sintaxe das classes anônimas, o Java 8 traz uma nova forma de implementar essas interfaces de maneira mais simples. É a sintaxe do lambda.<br><br>
 Dado uma String imprimi aquela String:<br>
 Ex: ArrayList.forEach( s -> System.out.println( s ) );<br>
@@ -27,6 +29,12 @@ Processo: O Java sabe que o forEach recebe consumer e ele vai atribuir  o valor 
 Ex: Consumer<String> impressor = s -> System.out.println(s);<br>
 Arraylist.forEach(impressor);<br><br>
 <strong>Interface funcional é aquela interface que só tem um método abstrato. Além desse método ela pode ter outros métodos, contanto que sejam default ou 'static'.</strong>
+
+### Funções lambdas:
+✅ Vieram para reduzir código;<br>
+✅ Ter uma melhor legibilidade; e<br>
+✅ Principalmente para viabilizar a programação funcional utilizada com Streams
+ 
 
 ### ❗ Importante:
 ✅ Para trabalhar com lambda, uma interface funcional precisa estar envolvida.<br>
@@ -38,3 +46,9 @@ Arraylist.forEach(impressor);<br><br>
 ## Method references
 > Esse recurso nos permite chamar um método usando referência de método.
 
+## Streams: trabalhando melhor com coleções
+> oferece ao desenvolvedor a possibilidade de trabalhar com conjuntos de elementos de forma mais simples e com um número menor de linhas de código
+
+✅ Stream é uma interface<br>
+✅ Toda collection tem um método que se chama stream que nos traz uma forma de trabalhar com objetos<br>
+✅ Stream não impacta na coleção orignial
