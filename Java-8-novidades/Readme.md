@@ -51,4 +51,8 @@ Arraylist.forEach(impressor);<br><br>
 
 ✅ Stream é uma interface<br>
 ✅ Toda collection tem um método que se chama stream que nos traz uma forma de trabalhar com objetos<br>
-✅ Stream não impacta na coleção orignial
+✅ Stream não impacta na coleção orignial<br>
+✅ Podemos entender uma stream como uma abstração para expressar operações eficientes do estilo SQL em relação a uma coleção de dados.
+
+### Optionals
+> Optionals surgiram para evitar nullPointerExceptions e antes de tentar obter algo, podemos validar se realmente existe.
