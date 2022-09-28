@@ -56,3 +56,9 @@ Arraylist.forEach(impressor);<br><br>
 
 ### Optionals
 > Optionals surgiram para evitar nullPointerExceptions e antes de tentar obter algo, podemos validar se realmente existe.
+ 
+## API de datas
+
+✅ Toda API de data é imutável
+
+Se precisar de hora minuto ou segundo, utilizar a classe <strong>LocalDateTime</strong>
