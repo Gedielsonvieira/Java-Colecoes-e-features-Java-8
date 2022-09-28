@@ -50,9 +50,8 @@ Arraylist.forEach(impressor);<br><br>
 > oferece ao desenvolvedor a possibilidade de trabalhar com conjuntos de elementos de forma mais simples e com um número menor de linhas de código
 
 ✅ Stream é uma interface<br>
-✅ Toda collection tem um método que se chama stream que nos traz uma forma de trabalhar com objetos<br>
-✅ Stream não impacta na coleção orignial<br>
-✅ Podemos entender uma stream como uma abstração para expressar operações eficientes do estilo SQL em relação a uma coleção de dados.
+✅ Toda collection tem um método que se chama stream, que nos traz uma forma de trabalhar com objetos<br>
+✅ Stream não impacta na coleção original<br>
 
 ### Optionals
 > Optionals surgiram para evitar nullPointerExceptions e antes de tentar obter algo, podemos validar se realmente existe.
@@ -60,5 +59,7 @@ Arraylist.forEach(impressor);<br><br>
 ## API de datas
 
 ✅ Toda API de data é imutável
+
+Não conseguimos instanciar a classe <strong>LocalDate</strong> porque já que o <strong>construtor é explicitamente privado, essa classe não pode ser instanciada de fora dessa classe</strong>
 
 Se precisar de hora minuto ou segundo, utilizar a classe <strong>LocalDateTime</strong>

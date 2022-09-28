@@ -7,7 +7,6 @@ import java.time.format.DateTimeFormatter;
 
 public class Data {
     public static void main(String[] args) {
-        //porque não consigo instanciar LocalDate?
         LocalDate agora =  LocalDate.now();
         System.out.println(agora);
 
